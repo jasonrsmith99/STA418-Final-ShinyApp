@@ -107,7 +107,7 @@ server <- function(input, output) {
       geom_point()+
       geom_line()+
       geom_hline(yintercept = 85, color = "red")+
-      labs(title = "Inspection rating of your cruise ship over time",
+      labs(title = paste("Santiation Ratings of ", input$cship, " Over Time", sep = ""),
            x = "Year",
            y = "Score",
            caption = "Minimum passing score of 85 is marked by red line")+

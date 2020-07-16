@@ -5,9 +5,9 @@ account: jasons99
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2577668
-bundleId: 3399543
+bundleId: 3401174
 url: https://jasons99.shinyapps.io/shiny-for-STA418-final/
-when: 1594902517.57903
+when: 1594928132.88307
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: data/deficiencies.csv
