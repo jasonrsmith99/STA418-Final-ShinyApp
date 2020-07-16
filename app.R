@@ -49,16 +49,28 @@ ui <- fluidPage(
     # Main panel for output
     mainPanel(
       tabsetPanel(
-        tabPanel("Score Over Time", plotOutput("plot")),
+        tabPanel("Score Over Time",
+                 br(),
+                 br(),
+                 plotOutput("plot")),
         tabPanel("Common Violation Areas", 
-                 column(width = 6, tableOutput("classification")),
-                 column(width = 6, tableOutput("vio_area"))),
+                 column(width = 6, 
+                        br(),
+                        br(),
+                        tableOutput("classification")),
+                 column(width = 6, 
+                        br(),
+                        br(),
+                        tableOutput("vio_area"))),
         tabPanel("Outbreaks",
                  column(width = 12, align = "center",
                         helpText(p("If table is empty, there are no recorded outbreaks."),
                                  p("Years may be listed more than once if there are multiple outbreaks.")),
                         tableOutput("outbreak_table"))),
-        tabPanel("Download", downloadButton("download", "Download Ship Data"))
+        tabPanel("Download",
+                 br(),
+                 br(),
+                 downloadButton("download", "Download Ship Data"))
         )
       )
     )
